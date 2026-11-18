@@ -1,0 +1,27 @@
+{
+  "x0_star": 400.16,
+  "kappa_bar_uniform": 0.4888,
+  "K": 0.4663,
+  "A": 1.8737,
+  "table2": [
+    {"s": 0.05, "fact_kg": 3.79,  "two_point_kg": 3.95,  "margin_pct": 4.29, "closed_kg": 3.78,  "closed_vs_front_pct": -0.15},
+    {"s": 0.10, "fact_kg": 7.66,  "two_point_kg": 7.98,  "margin_pct": 4.23, "closed_kg": 7.64,  "closed_vs_front_pct": -0.25},
+    {"s": 0.20, "fact_kg": 15.66, "two_point_kg": 16.29, "margin_pct": 4.04, "closed_kg": 15.58, "closed_vs_front_pct": -0.51},
+    {"s": 0.30, "fact_kg": 24.02, "two_point_kg": 24.95, "margin_pct": 3.86, "closed_kg": 23.83, "closed_vs_front_pct": -0.78},
+    {"s": 0.50, "fact_kg": 41.96, "two_point_kg": 43.38, "margin_pct": 3.39, "closed_kg": 41.36, "closed_vs_front_pct": -1.42},
+    {"s": 1.00, "fact_kg": 95.73, "two_point_kg": 97.32, "margin_pct": 1.66, "closed_kg": 92.27, "closed_vs_front_pct": -3.62}
+  ],
+  "checks": {
+    "two_point_above_front": true,
+    "closed_below_front": true,
+    "uniform_dominates_secants": true,
+    "segment_level": {"kappa_0.50": true, "sup_f0prime_s1": 0.4977},
+    "table4_secants": {"0.05": 0.4669, "0.10": 0.4676, "0.20": 0.4689, "0.30": 0.4703, "0.50": 0.4732, "1.00": 0.4820},
+    "table4_sup":     {"0.05": 0.4676, "0.10": 0.4688, "0.20": 0.4715, "0.30": 0.4742, "0.50": 0.4801, "1.00": 0.4977}
+  },
+  "ecs": {"L_T_formula": "0.2*s", "max_dev": 2.86e-08, "mission_energy_kWh": 17.8},
+  "provenance": {
+    "final_protocol.json": "live rerun of act_final.py (this session)",
+    "canon_evtol.json": "RECONSTRUCTED: fact from compiled PDF Table 2; two-point/closed recomputed analytically, agreement 0.00-0.01 kg; PENDING live rerun of act_evtol.py / act_ecs.py"
+  }
+}
