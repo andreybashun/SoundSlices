@@ -1,3 +1,9 @@
 .lake/
 *.olean
 *.ilean
+   ```text
+   .lake/
+   __pycache__/
+   *.aux
+   *.log
+   *.out
